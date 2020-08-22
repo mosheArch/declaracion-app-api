@@ -10,7 +10,7 @@ BASE_DIR = Path(__file__).ancestor(3)
 
 # SECURITY WARNING: keep the secret key used in production secret!
 with open("secret.json") as f:
-    secret = json.loads(f.read)
+    secret = json.load(f.read)
 
 def get_secret(secret_name, secrets=secret):
     try:
