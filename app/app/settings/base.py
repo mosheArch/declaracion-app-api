@@ -1,4 +1,4 @@
-from django.core.exceptions import ImpropelyConfigured
+from django.core.exceptions import ImproperlyConfigured
 import json
 from unipath import Path
 
