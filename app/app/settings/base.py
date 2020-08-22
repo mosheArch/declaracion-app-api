@@ -1,5 +1,5 @@
-from django.core.exceptions import ImproperlyConfigured
-import json
+# from django.core.exceptions import ImproperlyConfigured
+# import json
 from unipath import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -9,18 +9,18 @@ BASE_DIR = Path(__file__).ancestor(3)
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-with open("secret.json") as f:
-    secret = json.load(f.read)
-
-def get_secret(secret_name, secrets=secret):
-    try:
-        return secrets[secret_name]
-    except:
-        msg = "La variable %s no existe" % secret_name
-        raise ImpropelyConfigured(msg)
-
-SECRET_KEY = get_secret('SECRET_KEY')
-
+# with open("secret.json") as f:
+#     secret = json.load(f.read)
+#
+# def get_secret(secret_name, secrets=secret):
+#     try:
+#         return secrets[secret_name]
+#     except:
+#         msg = "La variable %s no existe" % secret_name
+#         raise ImpropelyConfigured(msg)
+#
+# SECRET_KEY = get_secret('SECRET_KEY')
+SECRET_KEY = '!dt*-&ca+w=xhs*$_o%ls7qchw6)je2d%*4n+(t+&ylh&!3x#2'
 # Application definition
 
 DJANGO_APPS = (
