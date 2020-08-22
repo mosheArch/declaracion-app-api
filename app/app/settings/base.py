@@ -33,7 +33,7 @@ DJANGO_APPS = (
 )
 
 LOCAL_APPS = (
-    'app.core',
+    'core',
     )
 
 THIRD_PARTY_APP = ()
