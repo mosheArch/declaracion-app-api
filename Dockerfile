@@ -1,5 +1,5 @@
 FROM python:3.8-alpine
-MAINTAINER App Delcaracion Patrimonial by Hallvaror
+LABEL maintainer="App Declaración Patrimonial by Hallvaror"
 
 ENV PYTHONUNBUFFERED 1
 
@@ -8,7 +8,7 @@ RUN pip install -r /requirements.txt
 
 RUN mkdir /app
 WORKDIR /app
-COPY ./app /App
+COPY ./app /app
 
 RUN adduser -D user
 USER user

@@ -32,7 +32,7 @@ DJANGO_APPS = (
     'django.contrib.staticfiles',
 )
 
-LOCAL_APPS = ()
+LOCAL_APPS = ('app.core')
 
 THIRD_PARTY_APP = ()
 
